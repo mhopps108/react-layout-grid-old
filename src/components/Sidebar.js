@@ -50,6 +50,7 @@ const CloseButton = styled.button`
 `;
 
 const StyledSidebar = styled.div`
+  border: 2px solid #222;
   background: white;
   height: calc(100vh - 55px);
   width: 200px;

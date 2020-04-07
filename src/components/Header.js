@@ -55,14 +55,15 @@ const NavGroup = styled.div`
   display: flex;
   color: white;
   & a {
-    padding-right: 5px;
     text-decoration: none;
   }
   & button {
-    padding-right: 5px;
     background-color: transparent;
     border: none;
     font-size: 1.1rem;
+    @media ${device.min.desktop} {
+      display: none;
+    }
   }
   & h3 {
     padding: 0;
