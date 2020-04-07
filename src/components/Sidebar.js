@@ -50,10 +50,7 @@ const CloseButton = styled.button`
 `;
 
 const StyledSidebar = styled.div`
-  /* border: 1px solid orange; */
   background: white;
-
-  /* grid-area: sidebar; */
   height: calc(100vh - 55px);
   width: 200px;
   display: flex;

@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import { Header, Sidebar, Toolbar, Main } from "./components";
 import styled, { css } from "styled-components";
 import { device } from "./devices";
-// import "boxicons";
 
 const StyledApp = styled.div`
   font-family: sans-serif;
   max-width: 1000px;
-  /* height: 100vh; */
   display: grid;
   grid-template-areas:
     "header"
@@ -30,10 +28,7 @@ const StyledApp = styled.div`
 
 export default function App() {
   const [sidebarVisable, setSidebarVisable] = useState(false);
-  const toggleSidebar = () => {
-    console.log("toggleSideDrawer clicked - App");
-    setSidebarVisable(!sidebarVisable);
-  };
+  const toggleSidebar = () => setSidebarVisable(!sidebarVisable);
   return (
     <StyledApp>
       <Header toggleSidebar={toggleSidebar} />

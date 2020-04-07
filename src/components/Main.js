@@ -3,9 +3,7 @@ import styled, { css } from "styled-components/macro";
 import { device } from "../devices";
 
 const StyledMain = styled.div`
-  /* border: 2px solid purple; */
   background-color: lightgray;
-
   grid-area: main;
   height: calc(100vh - 100px);
   overflow: scroll;
