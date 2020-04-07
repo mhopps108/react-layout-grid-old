@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { Header, Sidebar, Toolbar, Main } from "./components";
 import styled, { css } from "styled-components";
 import { device } from "./devices";
-
-import "boxicons";
+// import "boxicons";
 
 const StyledApp = styled.div`
-  /* border: 2px solid purple; */
   font-family: sans-serif;
   max-width: 1000px;
   /* height: 100vh; */

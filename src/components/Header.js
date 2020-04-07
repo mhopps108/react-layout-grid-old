@@ -22,12 +22,12 @@ export default function Header({ toggleSidebar }) {
           <a href="/">
             <box-icon name="search" color="white" />
           </a>
-          {/* <a href="/">
-            <box-icon name="dots-vertical-rounded" color="white" />
-          </a> */}
           <a href="/">
-            <box-icon name="cog" color="white" />
+            <box-icon name="dots-vertical-rounded" color="white" />
           </a>
+          {/* <a href="/">
+            <box-icon name="cog" color="white" />
+          </a> */}
         </NavGroup>
       </Navbar>
     </StyledHeader>
@@ -35,7 +35,6 @@ export default function Header({ toggleSidebar }) {
 }
 
 const StyledHeader = styled.div`
-  /* border: 1px solid green; */
   background-color: #222;
 
   grid-area: header;
@@ -44,8 +43,6 @@ const StyledHeader = styled.div`
 `;
 
 const Navbar = styled.nav`
-  /* border: 1px solid orange; */
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,9 +53,6 @@ const Navbar = styled.nav`
 
 const NavGroup = styled.div`
   display: flex;
-  /* justify-content: center; */
-  /* align-content: center; */
-  /* border: 1px solid red; */
   color: white;
   & a {
     padding-right: 5px;
@@ -86,13 +80,11 @@ const NavGroupPages = styled(NavGroup)`
 `;
 
 const NavLink = styled.a`
-  /* border: 1px solid yellow; */
   color: #ccc;
   font-size: 1rem;
   margin-right: 8px;
   padding: 4px 8px;
   border-radius: 5px;
-  /* background-color: #eee; */
 
   @media ${device.min.tablet} {
     font-size: 1.3rem;
